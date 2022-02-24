@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { localAlbums } from '../redux/albums/localAlbum';
+import { getAlbums } from '../redux/albums/albums';
 import  undefined_album_cover  from '../images/undefined_album_cover.png';
 import qobuz from '../images/qobuz.png';
+import Navbar from './Navbar';
  
 const Albums = () => {
-    const state = useSelector((state) => state.local);
+    const state = useSelector((state) => state.albums);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(localAlbums());
+        dispatch(getAlbums());
       }, [dispatch]);
   return (
     <div>
+    <Navbar />
     {state.map((album) => (
       <div key={`${album.id}`} >
         {album.artist}

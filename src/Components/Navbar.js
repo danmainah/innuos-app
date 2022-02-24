@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../media/planet.png';
 
 const links = [
   {

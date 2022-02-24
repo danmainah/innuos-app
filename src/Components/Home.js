@@ -1,18 +1,23 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Albums from './Albums';
+import LocalAlbums from './LocalAlbums';
+import QobuzAlbums from './QobuzAlbums';
 
 const Home = () => {
   return (
-    <Routes>
+    <Switch>
       <Route exact path="/">
         <Albums />
       </Route>
       <Route path="/local">
-        
+        <LocalAlbums />        
       </Route>
-    </Routes>
+      <Route path="/qobuz">
+        <QobuzAlbums />
+      </Route>
+    </Switch>
   )
-}
+};
 
 export default Home;
