@@ -9,7 +9,7 @@ const Home = () => {
         <Albums />
       </Route>
       <Route path="/local">
-
+        
       </Route>
     </Routes>
   )
