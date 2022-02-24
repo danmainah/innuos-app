@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { localAlbums } from '../redux/albums/localAlbum';
 import  undefined_album_cover  from '../images/undefined_album_cover.png';
 import qobuz from '../images/qobuz.png';
-import Navbar from './Navbar';
+import Navigation from './Navbar';
  
 const LocalAlbums = () => {
     const state = useSelector((state) => state.local);
@@ -13,7 +13,7 @@ const LocalAlbums = () => {
       }, [dispatch]);
   return (
     <div>
-    <Navbar />
+    <Navigation />
     {state.map((album) => (
       <div key={`${album.id}`} >
         {album.artist}

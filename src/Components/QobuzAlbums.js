@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { qobuzAlbums } from '../redux/albums/qobuzAlbum';
 import  undefined_album_cover  from '../images/undefined_album_cover.png';
 import qobuz from '../images/qobuz.png';
-import Navbar from './Navbar';
+import Navigation from './Navbar';
  
 const QobuzAlbums = () => {
     const state = useSelector((state) => state.qobuz);
@@ -13,7 +13,7 @@ const QobuzAlbums = () => {
       }, [dispatch]);
   return (
     <div>
-    <Navbar />
+    <Navigation />
     {state.map((album) => (
       <div key={`${album.id}`} >
         {album.artist}

@@ -5,29 +5,29 @@ const links = [
   {
     id: 1,
     path: '/',
-    text: 'Home',
+    text: 'ALL-ALBUMS',
   },
   {
     id: 2,
     path: '/local',
-    text: 'LocalAlbums',
+    text: 'LOCAL-ALBUMS',
   },
   {
     id: 3,
     path: '/qobuz',
-    text: 'QobuzAlbums',
+    text: 'QOBUZ-ALBUMS',
   },
 ];
 
-const Navbar = () => (
-  <nav
-    className="mx-4 d-flex justify-content-between align-items-center
-      py-3 mb-3 border-bottom border-secondary"
+const Navigation = () => (
+  <nav bg="dark" variant="dark"
+    className=" d-flex justify-content-center align-items-center
+    py-3 mb-3 border-bottom border-secondary"
   >
-    <ul className="d-flex ps-0 mb-0 nav-list">
-      {links.map((link) => (
-        <li key={link.id} className="text-primary">
-          <NavLink to={link.path} activeClassName="displaying" exact>
+    <ul className="d-flex ps-0 mb-0 nav justify-content-center">
+    {links.map((link) => (
+        <li key={link.id} className="mx-2 nav-item bg-dark">
+          <NavLink to={link.path} activeClassName="displaying" className="text-white text-decoration-none border-warning">
             {link.text}
           </NavLink>
         </li>
@@ -36,4 +36,4 @@ const Navbar = () => (
   </nav>
 );
 
-export default Navbar;
+export default Navigation;
