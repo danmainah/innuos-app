@@ -1,6 +1,6 @@
 # Innuos App
 
-> **Innuos App** Its a React Application that enables users to view different albums and filter the albums depending on Their source.
+> **Innuos App** Its a React Application that enables users to view different albums and filter the albums depending on their source.
 
 # Getting Started
 
@@ -18,7 +18,11 @@ To get a local copy up and running follow these simple steps.
 
 JavaScript
 
-React-Redux   
+React-Redux
+
+Bootstrap 5
+
+HTML AND CSS
 
 # Version Control System
 
