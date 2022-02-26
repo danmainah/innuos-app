@@ -41,10 +41,100 @@ body {
   background-color: black;
 }
 
-.imgwidth {
-  width: auto;
+.textwidth {
+  font-size: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
 }
 
 .cardwidth {
-  width: 11.5rem;
+  width: 7.5rem;
+}
+
+.circlesize {
+  width: 1rem;
+  position: relative;
+  bottom: 1.2rem;
+  left: 5.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .textwidth {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  .imgwidth {
+    width: auto;
+    height: auto;
+  }
+  
+  .textwidth {
+    width: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  
+  .cardwidth {
+    width: auto;
+  }
+
+  .circlesize {
+    width: 2rem;
+    position: relative;
+    bottom: 2.3rem;
+    left: 15.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .textwidth {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  .imgwidth {
+    width: auto;
+    height: auto;
+  }
+  
+  .textwidth {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  
+  .cardwidth {
+    width: 50%;
+  }
+
+  .circlesize {
+    width: 2rem;
+    position: relative;
+    bottom: 2.3rem;
+    left: 19rem;
+  }
 }
