@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: black;
+}
+
+.textwidth {
+  font-size: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
+.cardwidth {
+  width: 7.5rem;
+}
+
+.circlesize {
+  width: 1rem;
+  position: relative;
+  bottom: 1.2rem;
+  left: 5.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .textwidth {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  .imgwidth {
+    width: auto;
+    height: auto;
+  }
+  
+  .textwidth {
+    width: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  
+  .cardwidth {
+    width: auto;
+  }
+
+  .circlesize {
+    width: 2rem;
+    position: relative;
+    bottom: 2.3rem;
+    left: 15.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .textwidth {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  .imgwidth {
+    width: auto;
+    height: auto;
+  }
+  
+  .textwidth {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  
+  .cardwidth {
+    width: 50%;
+  }
+
+  .circlesize {
+    width: 2rem;
+    position: relative;
+    bottom: 2.3rem;
+    left: 19rem;
+  }
+}
